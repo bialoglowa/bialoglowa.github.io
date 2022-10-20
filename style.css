@@ -23,3 +23,7 @@ body {
   object-fit: cover;
   width: 100%;
 }
+
+.top-section {
+  min-height: calc(100vh - 73px);
+}
