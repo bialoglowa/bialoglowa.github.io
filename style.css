@@ -18,3 +18,8 @@ body {
 .site-content {
   flex: 1;
 }
+
+.posts img {
+  object-fit: cover;
+  width: 100%;
+}
