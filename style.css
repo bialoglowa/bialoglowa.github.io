@@ -90,6 +90,18 @@ p,
   right: 10px;
 }
 
+.belt--special {
+  background-color: #4ddeba;
+  color: #353b3b;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.belt--special p {
+  font-size: 3rem !important;
+  font-family: "Comforter";
+}
+
 /* BREAKPOINTS */
 /* BREAKPOINTS */
 /* BREAKPOINTS */
