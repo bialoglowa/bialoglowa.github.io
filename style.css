@@ -24,6 +24,35 @@ body {
   width: 100%;
 }
 
+.bg-secondary {
+  background-color: #eaeaea;
+}
+
 .top-section {
-  min-height: calc(100vh - 73px);
+  /* min-height: calc(100vh - 73px); */
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Comforter", serif;
+  font-size: 18rem !important;
+  color: white !important;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.card-title {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+}
+
+.card-text {
+  font-family: "Playfair Displya", serif;
+  font-size: 1.2rem;
+}
+
+.photo {
+  height: 300px !important;
+  width: 300px !important;
+  float: left;
+  margin-right: 1rem;
 }
