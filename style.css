@@ -40,19 +40,53 @@ h1 {
   text-shadow: 2px 2px 2px #000;
 }
 
-.card-title {
+.card-title,
+h5 {
   font-family: "Merriweather", serif;
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 
+p,
 .card-text {
   font-family: "Playfair Displya", serif;
   font-size: 1.2rem;
 }
 
 .photo {
-  height: 300px !important;
-  width: 300px !important;
+  /* height: 300px !important; */
+  /* max-height: 100%; */
+  /* width: 300px !important; */
+  max-width: 200px !important;
   float: left;
   margin-right: 1rem;
+}
+
+.accordion-button {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: inherit !important;
+}
+
+.accordion .accordion-item:nth-of-type(even) {
+  background-color: white !important;
+}
+
+.accordion .accordion-item:nth-of-type(odd) {
+  background-color: #eaeaea;
+}
+
+/* BREAKPOINTS */
+/* BREAKPOINTS */
+/* BREAKPOINTS */
+/* BREAKPOINTS */
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem !important;
+  }
 }
