@@ -3,6 +3,14 @@
   --secondary: green;
   --black: #000;
   --white: #fff;
+
+  --lightgray: #EFF5F5;
+  --grayish: #D6E4E5;
+  --dark: #497174;
+  --orange: #EB6440;
+
+  --darker: #0d1432;
+  --graybg: #e0e2e9;
 }
 
 html {
@@ -24,20 +32,19 @@ body {
   width: 100%;
 }
 
-.bg-secondary {
-  background-color: #eaeaea;
+.bg-hero {
+  background-color: var(--dark);
 }
 
 .top-section {
-  /* min-height: calc(100vh - 73px); */
   min-height: 100vh;
 }
 
 h1 {
   font-family: "Comforter", serif;
   font-size: 18rem !important;
-  color: white !important;
-  text-shadow: 2px 2px 2px #000;
+  color: var(--lightgray) !important;
+  text-shadow: 2px 2px 2px #0d1432;
 }
 
 .card-title,
@@ -53,9 +60,6 @@ p,
 }
 
 .photo {
-  /* height: 300px !important; */
-  /* max-height: 100%; */
-  /* width: 300px !important; */
   max-width: 200px !important;
   float: left;
   margin-right: 1rem;
@@ -67,7 +71,9 @@ p,
 }
 
 .accordion .accordion-item {
-  background-color: white !important;
+  background-color: var(--lightgray) !important;
+  margin-bottom: 4rem;
+  border: 0;
 }
 
 .accordion .accordion-item:nth-of-type(even) {
@@ -87,19 +93,47 @@ p,
 
 .accordion-button::after {
   position: absolute;
-  right: 10px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* font-family: "FontAwesome"; */
+  /* content: "\f078" !important; */
+  /* background-image: none !important; */
 }
 
 .belt--special {
-  background-color: #4ddeba;
-  color: #353b3b;
+  background-color: var(--orange);
+  color: var(--lightgray);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .belt--special p {
   font-size: 3rem !important;
-  font-family: "Comforter";
+  font-family: "Comforter", serif;
+}
+
+.footer-wave {
+  position: relative;
+  background-color: #e0e2e9;
+}
+
+.footer-wave::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url('assets/wave-footer.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+  z-index: -1;
+}
+
+.container__main {
+  margin-bottom: 10rem;
 }
 
 /* BREAKPOINTS */
