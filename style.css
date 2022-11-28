@@ -71,13 +71,15 @@ p,
   background-color: var(--orange);
   color: white !important;
   line-height: 1;
-  padding: .25rem;
+  padding: .25rem .5rem;
+  border-radius: 10px;
 }
 
 .photo {
   max-width: 200px !important;
   float: left;
   margin-right: 1rem;
+  border-radius: 10px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -96,6 +98,7 @@ p,
   background-color: var(--lightgray) !important;
   margin-bottom: 4rem;
   border: 0;
+  border-radius: 10px !important;
 }
 
 .accordion .accordion-item:nth-of-type(even) {
