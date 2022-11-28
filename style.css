@@ -122,6 +122,11 @@ p,
   height: 180px !important;
   background-size: 180px !important;
   opacity: .1;
+  transition: all 300ms ease-in-out !important;
+}
+
+.accordion-button:hover::after {
+  opacity: .25;
 }
 
 .belt--special {
