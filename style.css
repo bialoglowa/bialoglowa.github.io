@@ -32,6 +32,16 @@ body {
   flex: 1;
 }
 
+.btn-primary {
+  border-color: var(--secondary) !important;
+  background-color: var(--secondary) !important;
+}
+
+.btn-primary:hover {
+  border-color: var(--orange) !important;
+  background-color: var(--orange) !important;
+}
+
 .posts img {
   object-fit: cover;
   width: 100%;
@@ -82,13 +92,17 @@ p,
   border-radius: 10px;
 }
 
+.accordion-flush {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .accordion-button:not(.collapsed) {
   color: black !important;
   background-color: inherit !important;
 }
 
 .accordion .accordion-header {
-  /* background-image: url('assets/bauhaus-bg.png'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
@@ -102,7 +116,7 @@ p,
 }
 
 .accordion .accordion-item:nth-of-type(even) {
-  background-color: #eaeaea !important;
+  background-color: var(--graybg) !important;
 }
 
 .accordion-button {
@@ -132,6 +146,23 @@ p,
   opacity: .25;
 }
 
+form .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgb(73 113 116 / 25%);
+}
+
+form .form-control {
+  background-color: var(--graybg);
+  border-radius: 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--secondary);
+}
+
+form .form-label {
+  margin-bottom: 0;
+}
+
 .belt--special {
   background-color: var(--orange);
   color: var(--lightgray);
@@ -146,7 +177,7 @@ p,
 
 .footer-wave {
   position: relative;
-  background-color: #e0e2e9;
+  background-color: var(--graybg);
 }
 
 .footer-wave::before {
@@ -160,11 +191,23 @@ p,
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom center;
-  z-index: -1;
+  z-index: 0;
 }
 
 .container__main {
   margin-bottom: 10rem;
+}
+
+.main__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/blobs-bg.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: .3;
 }
 
 /* BREAKPOINTS */
