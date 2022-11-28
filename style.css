@@ -208,6 +208,7 @@ form .form-label {
   background-size: cover;
   background-position: center;
   opacity: .3;
+  z-index: -1;
 }
 
 /* BREAKPOINTS */
