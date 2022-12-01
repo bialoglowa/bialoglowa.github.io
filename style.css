@@ -252,7 +252,7 @@ form .form-label {
 }
 
 .black--dog .fa-heart {
-  color: red;
+  color: tomato;
 }
 
 .footer__social .fa-brands {
@@ -261,6 +261,17 @@ form .form-label {
 
 .footer__social .fa-instagram:hover {
   color: var(--instagram);
+}
+
+.cookies--free {
+  position: absolute;
+  left: -40px;
+  bottom: 50px;
+  transform: rotate(-90deg);
+}
+
+.cookies--free .fa-ban {
+  color: tomato;
 }
 
 /* BREAKPOINTS */
@@ -300,5 +311,10 @@ form .form-label {
   }
   .black--dog {
     position: relative;
+  }
+  .cookies--free {
+    bottom: 10px;
+    left: unset;
+    transform: unset;
   }
 }
