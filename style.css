@@ -126,6 +126,11 @@ p,
   margin-bottom: 4rem;
   border: 0;
   border-radius: 10px !important;
+  transform: all 300ms ease-in-out;
+}
+
+.accordion .accordion-item:hover {
+  box-shadow: 1px 1px 0 var(--grayish);
 }
 
 .accordion .accordion-item:nth-of-type(even) {
