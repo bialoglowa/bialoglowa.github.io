@@ -288,4 +288,7 @@ form .form-label {
   h2 {
     font-size: 2rem !important;
   }
+  .black--dog {
+    position: relative;
+  }
 }
