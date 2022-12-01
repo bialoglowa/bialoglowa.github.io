@@ -62,8 +62,13 @@ h1 {
   text-shadow: 2px 2px 2px #0d1432;
 }
 
+h2 {
+  font-family: var(--title);
+  font-size: 3rem !important;
+}
+
 .card-title,
-h5 {
+h3 {
   font-family: var(--subtitle);
   font-size: 2rem !important;
 }
@@ -177,11 +182,6 @@ form .form-label {
   padding-bottom: 1rem;
 }
 
-.belt--special p {
-  font-size: 3rem !important;
-  font-family: var(--title);
-}
-
 .footer-wave {
   position: relative;
   background-color: var(--graybg);
@@ -229,8 +229,34 @@ form .form-label {
 /* BREAKPOINTS */
 /* BREAKPOINTS */
 
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 10rem !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 3rem !important;
+    font-size: 6rem !important;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .top-section {
+    min-height: 33vh;
+  }
+  h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2rem !important;
   }
 }
