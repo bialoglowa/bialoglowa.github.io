@@ -1,5 +1,5 @@
 :root {
-  --primary: #0d6efd;
+  --primary: #EB6440;
   --secondary: #497174;
   --black: #000;
   --white: #fff;
@@ -11,6 +11,8 @@
 
   --darker: #0d1432;
   --graybg: #e0e2e9;
+
+  --instagram: #5B51D8;
 
   --title: "Comforter", serif;
   --subtitle: "Merriweather", serif;
@@ -251,6 +253,14 @@ form .form-label {
 
 .black--dog .fa-heart {
   color: red;
+}
+
+.footer__social .fa-brands {
+  color: var(--dark);
+}
+
+.footer__social .fa-instagram:hover {
+  color: var(--instagram);
 }
 
 /* BREAKPOINTS */
