@@ -224,6 +224,35 @@ form .form-label {
   right: -18px;
 }
 
+#scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#scrollTop .fa-solid {
+  background-color: var(--orange);
+  padding: 0.5rem 0.65rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.black--dog {
+  font-family: monospace;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  position: absolute;
+  bottom: 5px;
+  color: var(--dark);
+}
+
+.black--dog .fa-heart {
+  color: red;
+}
+
 /* BREAKPOINTS */
 /* BREAKPOINTS */
 /* BREAKPOINTS */
