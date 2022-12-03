@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
     };
 
     $(window).scroll(function() {
-        if($(window).scrollTop() + $(window).height() > $(document).height() - 180) {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 190) {
             instamobile.classList.add('instaabsolute');
             instamobile.classList.remove('instafixed');
         } else {
