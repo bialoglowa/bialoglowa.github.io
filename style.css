@@ -56,8 +56,20 @@ body {
 
 .top-section {
   min-height: 100vh;
-  overflow: hidden;
   position: relative;
+}
+
+.top-section__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('assets/bialoglowa_new.png');
+  background-repeat: no-repeat;
+  background-size: 75%;
+  opacity: .1;
+  background-position: center;
 }
 
 .main--head {
@@ -250,7 +262,16 @@ form .form-label {
   cursor: pointer;
 }
 
-#scrollTop .fa-solid {
+#instamobile {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#scrollTop .fa-solid,
+#instamobile .fa-brands {
   background-color: var(--orange);
   padding: 0.5rem 0.65rem;
   border-radius: 20px;
@@ -271,11 +292,11 @@ form .form-label {
   color: tomato;
 }
 
-.footer__social .fa-brands {
+.fa-brands {
   color: var(--dark);
 }
 
-.footer__social .fa-instagram:hover {
+.fa-instagram:hover {
   color: var(--instagram);
 }
 
@@ -302,17 +323,11 @@ form .form-label {
 }
 
 @media screen and (max-width: 991px) {
-  .main--head {
-    width: 800px;
-  }
 }
 
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 6rem !important;
-  }
-  .main--head {
-    width: 640px;
   }
 }
 
@@ -320,8 +335,8 @@ form .form-label {
   h1 {
     font-size: 4rem !important;
   }
-  .main--head {
-    width: 460px;
+  .top-section__bg {
+    background-size: 100%;
   }
 }
 
@@ -341,10 +356,7 @@ form .form-label {
   }
   .cookies--free {
     bottom: 10px;
-    left: unset;
-    transform: unset;
-  }
-  .main--head {
-    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

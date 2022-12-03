@@ -21,16 +21,17 @@ jQuery(document).ready(function($) {
     });
 
     var scrollTop = document.getElementById("scrollTop"); // scroll to top
-    window.onscroll = function(){
-        scrollfunction()
-    };
-    function scrollfunction(){
+    var instamobile = document.getElementById("instamobile"); // insta icon on mobile
+    function scrollfunction() {
         if( document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
             scrollTop.style.display = "block";
+            instamobile.style.display = "block";
         } else {
             scrollTop.style.display = "none";
+            instamobile.style.display = "none";
         }
     }
+
     scrollTop.addEventListener("click", function(){
         window.scrollTo({
             left: 0,
@@ -38,5 +39,10 @@ jQuery(document).ready(function($) {
             behavior: "smooth"
         })
     })
+
+    window.onscroll = function(){
+        scrollfunction()
+        scrollinsta();
+    };
 
 });
