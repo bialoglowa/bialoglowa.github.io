@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
     var scrollTop = document.getElementById("scrollTop"); // scroll to top
     var instamobile = document.getElementById("instamobile"); // insta icon on mobile
     function scrollfunction() {
-        if( document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+        if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             scrollTop.style.display = "block";
             instamobile.style.display = "block";
         } else {
@@ -44,5 +44,15 @@ jQuery(document).ready(function($) {
         scrollfunction()
         scrollinsta();
     };
+
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 180) {
+            instamobile.classList.add('instaabsolute');
+            instamobile.classList.remove('instafixed');
+        } else {
+            instamobile.classList.add('instafixed');
+            instamobile.classList.remove('instaabsolute');
+        }
+     });
 
 });

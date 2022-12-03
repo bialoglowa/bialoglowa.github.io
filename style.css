@@ -28,6 +28,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: relative;
 }
 
 .site-content {
@@ -278,6 +279,16 @@ form .form-label {
   color: white;
 }
 
+.instafixed {
+  position: fixed !important;
+  bottom: 20px !important;
+}
+
+.instaabsolute {
+  position: absolute !important;
+  bottom: 180px !important;
+}
+
 .black--dog {
   font-family: monospace;
   font-size: .8rem;
@@ -337,6 +348,9 @@ form .form-label {
   }
   .top-section__bg {
     background-size: 100%;
+  }
+  .instaabsolute {
+    display: none !important;
   }
 }
 
