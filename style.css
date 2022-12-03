@@ -123,9 +123,7 @@ p,
 }
 
 .photo {
-  max-width: 200px !important;
-  float: left;
-  margin-right: 1rem;
+  max-width: 300px !important;
   border-radius: 10px;
 }
 
