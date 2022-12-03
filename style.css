@@ -51,10 +51,20 @@ body {
 
 .bg-hero {
   background-color: var(--dark);
+  padding: 0 !important;
 }
 
 .top-section {
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main--head {
+  position: absolute;
+  opacity: .1;
+  z-index: 0;
+  width: 1030px;
 }
 
 h1 {
@@ -62,6 +72,7 @@ h1 {
   font-size: 18rem !important;
   color: var(--lightgray) !important;
   text-shadow: 2px 2px 2px #0d1432;
+  z-index: 1;
 }
 
 h2 {
@@ -290,16 +301,27 @@ form .form-label {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .main--head {
+    width: 800px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 6rem !important;
   }
-
+  .main--head {
+    width: 640px;
+  }
 }
 
 @media screen and (max-width: 575px) {
   h1 {
     font-size: 4rem !important;
+  }
+  .main--head {
+    width: 460px;
   }
 }
 
@@ -321,5 +343,8 @@ form .form-label {
     bottom: 10px;
     left: unset;
     transform: unset;
+  }
+  .main--head {
+    width: 280px;
   }
 }
