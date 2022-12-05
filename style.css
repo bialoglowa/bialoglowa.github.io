@@ -134,6 +134,10 @@ p,
   max-width: 460px;
 }
 
+.photo.small {
+  max-width: 360px;
+}
+
 .accordion-flush {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -344,6 +348,13 @@ form .form-label {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 6rem !important;
+  }
+  .photo.vertical,
+  .photo.horizontal {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
   }
 }
 
