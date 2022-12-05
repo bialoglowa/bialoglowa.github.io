@@ -123,8 +123,15 @@ p,
 }
 
 .photo {
-  max-width: 300px !important;
   border-radius: 10px;
+}
+
+.photo.vertical {
+  max-width: 300px !important;
+}
+
+.photo.horizontal {
+  max-width: 460px;
 }
 
 .accordion-flush {
