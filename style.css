@@ -100,7 +100,9 @@ h3 {
 }
 
 p,
-.card-text {
+.card-text,
+ul li,
+ol li {
   font-family: var(--text);
   font-size: 1.2rem;
   line-height: 1.3;
