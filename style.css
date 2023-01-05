@@ -97,6 +97,7 @@ h2 {
 h3 {
   font-family: var(--subtitle);
   font-size: 2rem !important;
+  word-break: break-word;
 }
 
 p,
